@@ -3,24 +3,15 @@
 
 <head>
   <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta http-equiv="X-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="apple-touch-icon" sizes="180x180" href="brio-2.png" />
   <link rel="icon" type="image/png" sizes="32x32" href="brio-2.png" />
   <link rel="icon" type="image/png" sizes="16x16" href="brio-2.png" />
-  <script>
-    // Check if the user is logged in
-    if (localStorage.getItem("isLoggedIn") !== "true") {
-      // Redirect to login page if not logged in
-      window.location.href = "index.html";
-    }
-  </script>
   <title>Dashboard</title>
-  <link rel="icon" href="brio-2.png"" type="image/x-icon"> <!-- Update path for favicon -->
   <meta content="" name="description">
   <meta content="" name="keywords">
 
-  
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
 
@@ -35,7 +26,27 @@
   <!-- Template Main CSS File -->
   <link href="css/contact.css" rel="stylesheet">
 
-  
+  <!-- Custom CSS for typing effect -->
+  <style>
+    #footer h6.typing {
+      overflow: hidden;
+      border-right: .15em solid orange;
+      white-space: nowrap;
+      margin: 0 auto;
+      letter-spacing: .15em;
+      animation: typing 3.5s steps(30, end), blink-caret .75s step-end infinite;
+    }
+
+    @keyframes typing {
+      from { width: 0 }
+      to { width: 100% }
+    }
+
+    @keyframes blink-caret {
+      from, to { border-color: transparent }
+      50% { border-color: orange; }
+    }
+  </style>
 </head>
 
 <body>
@@ -43,16 +54,12 @@
    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/105/three.min.js"></script>
    <script src="js/dat.gui.min.js"></script>
    <script src="js/fluid-background.js"></script>
-  
+
   <!-- ======= Mobile nav toggle button ======= -->
-  <!-- <button type="button" class="mobile-nav-toggle d-xl-none"><i class="bi bi-list mobile-nav-toggle"></i></button> -->
   <i class="bi bi-list mobile-nav-toggle d-lg-none"></i>
+
   <!-- ======= Header ======= -->
-  <header id="header" class="d-flex flex-column justify-content-center">
-
-    
-
-  </header><!-- End Hetader -->
+  <header id="header" class="d-flex flex-column justify-content-center"></header><!-- End Header -->
 
   <!-- ======= Hero Section ======= -->
   <section id="hero" class="d-flex flex-column justify-content-center">
@@ -64,7 +71,6 @@
         <li><a href="PriceChart.html" >Price Chart</a></li>
       </ul>
     </div>
-  </div>
   </section><!-- End Hero -->
 
   <main id="main">
@@ -89,8 +95,9 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
-   <!-- Custom JS for repeating typing effect -->
- <script>
+
+  <!-- Custom JS for repeating typing effect -->
+  <script>
     function resetTyping() {
       const element = document.getElementById('typing-text');
       element.classList.remove('typing');
