@@ -399,6 +399,7 @@ section {
 }
 
 #footer h6 {
+     #footer h6 {
       overflow: hidden;
       border-right: .15em solid orange;
       white-space: nowrap;
