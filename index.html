@@ -5,15 +5,22 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-  <title>Sayeed Shaik</title>
+  <link rel="apple-touch-icon" sizes="180x180" href="brio-2.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="brio-2.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="brio-2.png" />
+  <script>
+    // Check if the user is logged in
+    if (localStorage.getItem("isLoggedIn") !== "true") {
+      // Redirect to login page if not logged in
+      window.location.href = "index.html";
+    }
+  </script>
+  <title>Dashboard</title>
+  <link rel="icon" href="path/to/favicon.ico" type="image/x-icon"> <!-- Update path for favicon -->
   <meta content="" name="description">
   <meta content="" name="keywords">
 
-  <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
-
+  
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
 
@@ -43,31 +50,21 @@
   <!-- ======= Header ======= -->
   <header id="header" class="d-flex flex-column justify-content-center">
 
-    <nav id="navbar" class="navbar nav-menu">
-      <ul>
-        <li><a href="index.html" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Home</span></a></li>
-        <li><a href="index.html#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>About</span></a></li>
-        <li><a href="index.html#Services" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Services</span></a></li>
-        <li><a href="index.html#portfolio" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>Portfolio</span></a></li>
-        <li><a href="#" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Contact</span></a></li>
-      </ul>
-    </nav><!-- .nav-menu -->
+    
 
   </header><!-- End Header -->
 
   <!-- ======= Hero Section ======= -->
   <section id="hero" class="d-flex flex-column justify-content-center">
     <div class="container" data-aos="zoom-in" data-aos-delay="100">
-      <h1>Sayeed Shaik</h1>
-      <p>I'm <span class="typed" data-typed-items="Web Application Pentester, Network Consultant, Bug Bounty Hunter, Freelancer"></span></p>
-      <div class="social-links">
-        <a href="https://twitter.com/sayeedm44" class="twitter" target="_blank"><i class="bx bxl-twitter"></i></a>
-       <!-- <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>-->
-        <a href="https://instagram.com/sayeed__shaik" class="instagram" target="_blank"><i class="bx bxl-instagram"></i></a>
-        <!--<a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>-->
-        <a href="https://www.linkedin.com/in/sayeedshaik/" class="linkedin" target="_blank"><i class="bx bxl-linkedin"></i></a>
-        <a href="https://wa.me/+919030850119" class="whatsapp" target="_blank"><i class="bx bxl-whatsapp"></i></a> 
-        <a href="mailto:sayeed.shaikm@gmail.com" class="nav-link scrollto"><i class="bx bx-envelope"></i></a>
+        <h2>Welcome to Brio Dashboard</h2>
+      <ul>
+        <li><a href="briofeasibilitychart.html" >Brio Feasibility Chart</a></li>
+        <li><a href="otf.html" >Brio OTF</a></li>
+        <li><a href="PriceChart.html" >Price Chart</a></li>
+      </ul>
+    </div>
+  </div>
        </div>
     </div>
   </section><!-- End Hero -->
@@ -94,7 +91,7 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
-
+ Dev By Sayeed Shaik
 </body>
 
 </html>
