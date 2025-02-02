@@ -399,7 +399,7 @@ section {
 }
 
 #footer h6 {
-     #footer h6 {
+     #footer h6.typing {
       overflow: hidden;
       border-right: .15em solid orange;
       white-space: nowrap;
