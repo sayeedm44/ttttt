@@ -89,6 +89,17 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+   <!-- Custom JS for repeating typing effect -->
+  <script>
+    function resetTyping() {
+      const element = document.getElementById('typing-text');
+      element.style.animation = 'none';
+      element.offsetHeight; /* Trigger reflow */
+      element.style.animation = null; 
+    }
+
+    setInterval(resetTyping, 7000); // Adjust the interval to match the animation duration
+  </script>
  
 </body>
 
