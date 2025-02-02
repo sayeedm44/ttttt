@@ -275,7 +275,7 @@ h6 {
   right: 0;
 }
 
-#hero h1 {
+#hero h2 {
   margin: 0;
   font-size: 64px;
   font-weight: 700;
@@ -317,7 +317,7 @@ h6 {
     text-align: center;
   }
 
-  #hero h1 {
+  #hero h2 {
     font-size: 32px;
     line-height: 36px;
   }
@@ -342,7 +342,7 @@ section {
   padding-bottom: 30px;
 }
 
-.section-title h2 {
+.section-title h1 {
   font-size: 32px;
   font-weight: bold;
   text-transform: uppercase;
@@ -352,7 +352,7 @@ section {
   color: #45505b;
 }
 
-.section-title h2::before {
+.section-title h1::before {
   content: "";
   position: absolute;
   display: block;
@@ -363,7 +363,7 @@ section {
   left: calc(50% - 60px);
 }
 
-.section-title h2::after {
+.section-title h1::after {
   content: "";
   position: absolute;
   display: block;
