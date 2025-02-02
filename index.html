@@ -73,7 +73,7 @@
 
   <!-- ======= Footer ======= -->
   <footer id="footer" class="d-flex justify-content-center align-items-center">
-    <h6 id="typing-text">Dev By Sayeed Shaik</h6>
+    <h6 id="typing-text" class="typing">Dev By Sayeed Shaik</h6>
   </footer><!-- End Footer -->
 
   <!-- Vendor JS Files -->
@@ -90,17 +90,16 @@
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
    <!-- Custom JS for repeating typing effect -->
-  <script>
+ <script>
     function resetTyping() {
       const element = document.getElementById('typing-text');
-      element.style.animation = 'none';
-      element.offsetHeight; /* Trigger reflow */
-      element.style.animation = null; 
+      element.classList.remove('typing');
+      void element.offsetWidth; // Trigger reflow
+      element.classList.add('typing');
     }
 
     setInterval(resetTyping, 7000); // Adjust the interval to match the animation duration
   </script>
- 
 </body>
 
 </html>
