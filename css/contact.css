@@ -392,8 +392,10 @@ section {
   position: fixed;
   bottom: 0;
   left: 0;
-  padding: 10px 20px; /* Adjust padding for spacing */
+  padding: 10px; /* Adjust padding for spacing */
   z-index: 1000; /* Ensure footer is above other elements */
+  width: auto; /* Ensure the footer takes the width of its content */
+  height: auto; /* Ensure the footer takes the height of its content */
 }
 
 #footer h6 {
